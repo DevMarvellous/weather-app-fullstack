@@ -79,10 +79,10 @@ function App() {
           <h2>{weather.name}</h2>
           <p>Temperature: {weather.main.temp}°C</p>
           <p>Humidity: {weather.main.humidity}%</p>
-          <p>Condition: {weather.weather.description}</p>
+          <p>Condition: {weather.weather[0].description}</p>
           <img
             src={`openweathermap.org{weather.weather.icon}.png`}
-            alt={weather.weather.description}
+            alt={weather.weather[0].description}
           />
         </div>
       )}
