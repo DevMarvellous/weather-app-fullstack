@@ -1,0 +1,18 @@
+/* client/src/App.css */
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+header h1 { color: #333; }
+form { margin-bottom: 20px; }
+input[type="text"] { padding: 10px; font-size: 16px; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; }
+button { padding: 10px 15px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+button:disabled { background-color: #aaa; cursor: not-allowed; }
+.error { color: #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px; }
+.weather-card { margin-top: 20px; padding: 20px; border: 1px solid #007bff; border-radius: 10px; background-color: #113399
