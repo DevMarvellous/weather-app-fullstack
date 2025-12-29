@@ -41,6 +41,7 @@ function App() {
       setWeather(response.data);
       setCity(''); 
     } catch (err) {
+      alert(err);
       setError('City not found or server error. Check if your backend is running.');
       setWeather(null);
     } finally {
