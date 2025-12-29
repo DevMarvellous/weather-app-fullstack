@@ -23,7 +23,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''; 
-  alert(BACKEND_URL);
 
   const fetchWeather = async () => {
     setLoading(true);
@@ -41,7 +40,6 @@ function App() {
       setWeather(response.data);
       setCity(''); 
     } catch (err) {
-      alert(err);
       setError('City not found or server error. Check if your backend is running.');
       setWeather(null);
     } finally {
