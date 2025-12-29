@@ -23,7 +23,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ''; 
-
+  alert(BACKEND_URL);
 
   const fetchWeather = async () => {
     setLoading(true);
